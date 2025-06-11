@@ -11,6 +11,24 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+ 
+}
+
+/* Configurações para deixar a imagem no background*/
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+ background-image: url("Imagens/background.png"); /* Puxa a imagem pelo CSS */
+  background-repeat: no-repeat; /*não repete a imagem */
+  background-size: cover;  /* a imagem cobre a tela inteira (mantendo a proporção).*/
+  background-position: center; /* centraliza a imagem.*/
+  background-attachment: fixed; /* opcional: faz o fundo fixo enquanto rola a página */
+  filter: brightness(70%); /* reduz o brilho da imagem */
+  opacity: 0.5; /* para suavizar mais */
+  z-index: -1;
 }
 
 .form {
@@ -26,20 +44,25 @@ body {
 .perguntas {
   box-shadow: 20px 12px 15px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-  margin-bottom: 25px;  /* Espaçou cada fieldset assim pude tirar os <br> do HTML*/
-  margin-right: 10px;  /* Puxou a margem para perto dos textos */
+  margin-bottom: 25px;
+  /* Espaçou cada fieldset assim pude tirar os <br> do HTML*/
+  margin-right: 10px;
+  /* Puxou a margem para perto dos textos */
   width: 90%;
   height: min-content;
 }
 
-.perguntas h3 { /* Coloquei o Título h3 das perguntas alinhadas no meio */
+.perguntas h3 {
+  /* Coloquei o Título h3 das perguntas alinhadas no meio */
   text-align: center;
-  margin-bottom: 15px; /* espaço abaixo do título */
+  margin-bottom: 15px;
+  /* espaço abaixo do título */
 }
 
 .perguntas .radio-label {
   display: flex;
-  flex-direction: column; /* Deixou os números acima do radio*/
+  flex-direction: column;
+  /* Deixou os números acima do radio*/
   align-items: center;
   margin: 0 10px;
   cursor: pointer;
@@ -48,17 +71,21 @@ body {
 .perguntas .radio-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* permite quebrar linha em telas pequenas */
-  gap: 15px; /* espaço entre as opções */
+  flex-wrap: wrap;
+  /* permite quebrar linha em telas pequenas */
+  gap: 15px;
+  /* espaço entre as opções */
 }
 
 .perguntas input[type="radio"] {
-  margin-left: 5px; /* pequeno espaço entre o número e o botão */
+  margin-left: 5px;
+  /* pequeno espaço entre o número e o botão */
 }
 
 /* Cabeçalho HEADER*/
 header {
-  width: 80%; /* Agora segue a largura do body centralizado */
+  width: 80%;
+  /* Agora segue a largura do body centralizado */
   height: 100px;
   display: flex;
   justify-content: space-around;
@@ -67,7 +94,8 @@ header {
   border-style: solid;
   padding-top: 0px;
   margin-top: 20px;
-  margin-bottom: 40px; /* Distanciar o Header do Fieldset */
+  margin-bottom: 40px;
+  /* Distanciar o Header do Fieldset */
 }
 
 
@@ -104,46 +132,62 @@ footer {
   display: flex;
   justify-content: space-between;
   background-color: rgb(95, 95, 91);
-  padding: 100px;
+  padding: 40px;
 }
 
 
 #melhorias {
-  width: 80%;          /* menos larga, 80% do container */
-  height: 100px;        /* caixa mais alta */
+  width: 80%;
+  /* menos larga, 80% do container */
+  height: 100px;
+  /* caixa mais alta */
   box-sizing: border-box;
-  display: block;      /* para poder aplicar margin */
-  margin: 0 auto;      /* para centralizar horizontalmente */
-  padding: 8px;        /* para deixar o texto confortável */
-  font-size: 14px;     /* fonte maior para melhor visual */
-  border-radius: 4px;  /* borda arredondada, opcional */
-  border: 1px solid #ccc; /* borda padrão */
+  display: block;
+  /* para poder aplicar margin */
+  margin: 0 auto;
+  /* para centralizar horizontalmente */
+  padding: 8px;
+  /* para deixar o texto confortável */
+  font-size: 14px;
+  /* fonte maior para melhor visual */
+  border-radius: 4px;
+  /* borda arredondada, opcional */
+  border: 1px solid #ccc;
+  /* borda padrão */
 }
 
-#pergunta1{
+#pergunta1 {
   width: 80%;
   height: 25px;
   box-sizing: border-box;
-  display: block;      /* para poder aplicar margin */
-  margin: 0 auto;      /* para centralizar horizontalmente */
-  padding: 8px;        /* para deixar o texto confortável */
-  font-size: 14px;     /* fonte maior para melhor visual */
-  border-radius: 4px;  /* borda arredondada, opcional */
-  border: 1px solid #ccc; /* borda padrão */
+  display: block;
+  /* para poder aplicar margin */
+  margin: 0 auto;
+  /* para centralizar horizontalmente */
+  padding: 8px;
+  /* para deixar o texto confortável */
+  font-size: 14px;
+  /* fonte maior para melhor visual */
+  border-radius: 4px;
+  /* borda arredondada, opcional */
+  border: 1px solid #ccc;
+  /* borda padrão */
 }
 
 /*         RESPONSIVIDADE        RESPONSIVIDADE      RESPONSIVIDADE         RESPONSIVIDADE     */
 /* RESPONSIVIDADE Form*/
 
 @media only screen and (max-device-width: 1200px) {
-  header, footer {
+
+  header,
+  footer {
     width: 100%;
   }
 }
 
 /*  PAROU AQUI */
 @media only screen and (max-device-width: 722px) {
-  footer{}
+  footer {}
 }
 
 @media only screen and (max-device-width: 600px) {
