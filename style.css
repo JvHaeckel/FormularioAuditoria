@@ -19,16 +19,17 @@ body::before {
   content: "";
   position: fixed;
   top: 0; left: 0;
-  width: 100%;
-  height: 100%;
- background-image: url("Imagens/BackGround/Back\ desenho.png"); /* Puxa a imagem pelo CSS */
+  width: 100vw;  /* largura fixa em viewport */
+  height: 100vh; /* altura fixa em viewport */
+  background-image: url("Imagens/BackGround/Back\ desenho.png"); /* Puxa a imagem pelo CSS */
   background-repeat: no-repeat; /*não repete a imagem */
-  background-size: auto;  /* a imagem cobre a tela inteira (mantendo a proporção).*/
-  background-position: -250% 70%; /* Muda a posição da foto (horizontal e vertical) mas lembre que o background-size não pode ser COVER*/
+  background-size: 80%;  /* Controla o tamanho da imagem */
+  background-position: -200% 100%; /* Muda a posição da foto (horizontal e vertical) mas lembre que o background-size não pode ser COVER*/
   /* background-attachment: fixed; opcional: faz o fundo fixo enquanto rola a página */
   filter: brightness(90%); /* reduz o brilho da imagem */
   opacity: 0.5; /* para suavizar mais */
   z-index: -7;
+  pointer-events: none;
 }
 
 .form {
