@@ -27,431 +27,7 @@ body::before {
   background-position: center; /* centraliza a imagem.*/
   background-attachment: fixed; /* opcional: faz o fundo fixo enquanto rola a página */
   filter: brightness(90%); /* reduz o brilho da imagem */
-  opacity: 0.2
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  ; /* para suavizar mais */
+  opacity: 0.2; /* para suavizar mais */
   z-index: -1;
 }
 
@@ -466,6 +42,7 @@ body::before {
 
 /*  Fieldsets Ajuste de largura e deixando abaixo do Título junto com os radios lado a lado*/
 .perguntas {
+  font-size: medium;
   box-shadow: 20px 12px 15px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   margin-bottom: 25px;
@@ -474,6 +51,7 @@ body::before {
   /* Puxou a margem para perto dos textos */
   width: 90%;
   height: min-content;
+  background-color: #ebe4ea;
 }
 
 .perguntas h3 {
@@ -497,7 +75,7 @@ body::before {
   justify-content: center;
   flex-wrap: wrap;
   /* permite quebrar linha em telas pequenas */
-  gap: 15px;
+  gap: 25px;
   /* espaço entre as opções */
 }
 
@@ -508,18 +86,17 @@ body::before {
 
 /* Cabeçalho HEADER*/
 header {
-  width: 80%;
-  /* Agora segue a largura do body centralizado */
+  width: 80%; /* Agora segue a largura do body centralizado */
   height: 100px;
+  background-color: #585658;
   display: flex;
   justify-content: space-around;
   box-shadow: 10px 8px 12px rgba(0, 0, 0, 0.25);
-  border-radius: 40px;
+  border-radius: 30px;
   border-style: solid;
   padding-top: 0px;
   margin-top: 20px;
-  margin-bottom: 40px;
-  /* Distanciar o Header do Fieldset */
+  margin-bottom: 40px; /* Distanciar o Header do Fieldset */
 }
 
 
@@ -528,12 +105,12 @@ header {
 
 /* Botão*/
 button {
-  font-size: 20px;
+  font-size: 18px;
   /*altera o tamanho da fonte do botão*/
   /* Aumentou a largura */
-  height: 30px;
+  height: 35px;
   /*altera a altura do botão*/
-  width: 100px;
+  width: 120px;
   /*altera a largurado botão*/
   border-radius: 50px;
   background-color: rgba(53, 51, 52, 0.664);
@@ -544,19 +121,20 @@ button {
 button:hover {
   width: 150px;
   height: 50px;
-  font-size: 40px;
+  font-size: 35px;
   color: green;
+  background-color: #ebe4ea;
 }
 
 /*   RODAPÉ  */
 footer {
   width: 80%;
-  margin: 25px;
-  /* Usei para afastar do Button*/
+  height: 75px;
+  margin: 35px; /* Usei para afastar do Button*/
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: rgb(95, 95, 91);
-  padding: 40px;
+  padding: 30px;
 }
 
 
@@ -599,45 +177,63 @@ footer {
 }
 
 /*         RESPONSIVIDADE        RESPONSIVIDADE      RESPONSIVIDADE         RESPONSIVIDADE     */
-/* RESPONSIVIDADE Form*/
 
-@media only screen and (max-device-width: 1200px) {
+@media (max-width: 960px) {
+  body, header, footer, .form {
+    width: 90%;
+  }
+}
 
-  header,
-  footer {
+@media (max-width: 850px) {
+  body, header, footer, .form {
+    width: 75%;
+  }
+  #logo{
+   content: url("Imagens/Logos/MobiBrasil\ Logo\ 250\ .png");
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+  .form {
     width: 100%;
   }
-}
-
-/*  PAROU AQUI */
-@media only screen and (max-device-width: 722px) {
-  footer {}
-}
-
-@media only screen and (max-device-width: 600px) {
-  .form1.form2 {
-    width: 400px;
-    font-size: medium;
+  .perguntas {
+    width: 100%;
+  }
+  header, footer {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  button {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+  }
+  button:hover {
+    width: 120px;
+    height: 40px;
+    font-size: 22px;
   }
 }
 
-@media only screen and (max-device-width: 300px) {
-  .form1.form2 {
-    width: auto;
-    font-size: small;
+@media (max-width: 400px) {
+  body {
+    font-size: 14px;
   }
-}
-
-@media only screen and (max-device-width: 200px) {
-  .form1.form2 {
-    width: auto;
-    font-size: small;
+  button {
+    width: 80px;
+    height: 25px;
+    font-size: 14px;
   }
-}
-
-@media only screen and (max-device-width: 150px) {
-  .form1.form2 {
-    width: auto;
-    font-size: small;
+  button:hover {
+    width: 100px;
+    height: 35px;
+    font-size: 18px;
   }
 }
