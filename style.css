@@ -260,12 +260,31 @@ footer {
     height: 25px;
     font-size: 14px;
   }
-  button:hover {
-    width: 100px;
-    height: 35px;
-    font-size: 18px;
-  }
+  
   #logo{
    content: url("Imagens/Logos/MobiBrasil\ Logo\ 125.png");
   }
 }
+
+@media (max-width: 391px) {
+  
+  button {
+    width: 80px;
+    height: 25px;
+    font-size: 14px;
+  }
+  
+  #logo{
+   content: url("Imagens/Logos/MobiBrasil\ Logo\ 125.png");
+  }
+
+
+  .perguntas h3{
+    font-size: smaller;
+  }
+  .perguntas .radio-container{
+    width: max-content;
+    font-size: smaller;
+  }
+}
+
