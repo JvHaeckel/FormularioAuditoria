@@ -56,6 +56,11 @@ header {
   margin-bottom: 40px; /* Distanciar o Header do Fieldset */
 }
 
+h1{
+  text-align: center;
+  text-decoration: solid;
+  font-size: 30px;
+}
 
 /*  Fieldsets Ajuste de largura e deixando abaixo do Título junto com os radios lado a lado*/
 .perguntas {
@@ -194,6 +199,11 @@ footer {
   #logo{
    content: url("Imagens/Logos/MobiBrasil\ Logo\ 250\ .png");
   }
+  h1{
+  text-align: center;
+  text-decoration: solid;
+  font-size: 25px;
+}
 }
 
 
@@ -203,16 +213,16 @@ footer {
     font-size: 16px;
   }
   .form {
-    width: 90%;
+    width: 80%;
   }
   .perguntas {
     width: 90%;
   }
-  header, footer {
+  header {
     flex-direction: column;
-    height: auto;
+    height: 190px;
     padding: 10px;
-     font-size: 14px;
+     font-size: 10px;
      text-align: center;
      width: 90%;
   }
@@ -229,12 +239,22 @@ footer {
   #logo{
    content: url("Imagens/Logos/MobiBrasil\ Logo\ 125.png");
   }
+  footer{
+    flex-direction: column;
+    height: 100px;
+    padding: 10px;
+     font-size: 10px;
+     text-align: center;
+     width: 90%;
+
+  }
 }
 
+/*HOVER não está funcionando porque em dispositivos móveis pequenos normalmente não existe hover — ou seja,
+ em telas pequenas(celulares), o navegador interpreta que não há mouse hover, já que o usuário usa toque(touchscreen).*/
+
 @media (max-width: 400px) {
-  body {
-    font-size: 14px;
-  }
+  
   button {
     width: 80px;
     height: 25px;
